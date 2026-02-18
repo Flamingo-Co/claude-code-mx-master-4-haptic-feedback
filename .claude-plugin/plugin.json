@@ -1,0 +1,11 @@
+{
+  "name": "haptic",
+  "description": "Haptic feedback on Logitech MX Master 4 when Claude Code finishes a task",
+  "version": "1.0.0",
+  "author": {
+    "name": "Flamingo Co",
+    "url": "https://github.com/Flamingo-Co"
+  },
+  "repository": "https://github.com/Flamingo-Co/claude-code-mx-master-4-haptic-feedback",
+  "license": "MIT"
+}
