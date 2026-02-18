@@ -2,12 +2,12 @@
   "name": "flamingo-haptic",
   "owner": {
     "name": "Flamingo Co",
-    "url": "https://github.com/Flamingo-Co"
+    "email": "dev@flamingo.co"
   },
   "plugins": [
     {
       "name": "haptic",
-      "source": ".",
+      "source": "./plugins/haptic",
       "description": "Haptic feedback on Logitech MX Master 4 when Claude Code finishes a task",
       "version": "1.0.0",
       "author": {

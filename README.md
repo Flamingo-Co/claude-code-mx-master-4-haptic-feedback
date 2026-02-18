@@ -51,7 +51,7 @@ Or for local development:
 
 ```bash
 git clone https://github.com/Flamingo-Co/claude-code-mx-master-4-haptic-feedback.git
-claude --plugin-dir ./claude-code-mx-master-4-haptic-feedback
+claude --plugin-dir ./claude-code-mx-master-4-haptic-feedback/plugins/haptic
 ```
 
 ### 3. Done
@@ -69,7 +69,7 @@ export HAPTIC_WAVEFORM=happy_alert
 claude
 ```
 
-Or edit `hooks/haptic-notify.sh` directly.
+Or edit `plugins/haptic/hooks/haptic-notify.sh` directly.
 
 ### Available Waveforms
 
@@ -91,7 +91,7 @@ Full list: `curl https://local.jmw.nz:41443/waveforms`
 
 ### Change When It Fires
 
-Edit `hooks/hooks.json` to use different lifecycle events:
+Edit `plugins/haptic/hooks/hooks.json` to use different lifecycle events:
 
 | Event | When it fires |
 |-------|--------------|
@@ -111,7 +111,7 @@ Example — fire only on task completion:
         "hooks": [
           {
             "type": "command",
-            "command": "$PLUGIN_DIR/hooks/haptic-notify.sh"
+            "command": "$CLAUDE_PLUGIN_ROOT/hooks/haptic-notify.sh"
           }
         ]
       }
@@ -154,7 +154,7 @@ The whole chain takes ~50ms.
 
 **Hook doesn't fire:**
 - Check plugin is loaded: `/plugin list` in Claude Code
-- Test manually: `echo '{}' | ./hooks/haptic-notify.sh`
+- Test manually: `echo '{}' | ./plugins/haptic/hooks/haptic-notify.sh`
 
 **Port 41443 conflict:**
 - `lsof -ti:41443` to find what's using it
