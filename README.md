@@ -12,9 +12,20 @@ Claude Code (Stop hook) → shell script → HapticWebPlugin (localhost) → Log
 
 [HapticWebPlugin](https://github.com/Fallstop/HapticWebPlugin) is an open-source Logi Options+ plugin that exposes your mouse's haptic motor via a local HTTP API.
 
+#### Option A: Via Logi Marketplace (Recommended)
+
+1. Open **Logi Options+** → click your **MX Master 4**
+2. Go to **Haptic Feedback** in the sidebar → open haptic settings
+3. Click **Install and Uninstall Plugins**
+4. Find **HapticWebPlugin** in the marketplace and install it
+
+#### Option B: Manual Install
+
 1. Download `HapticWeb.lplug4` from [HapticWebPlugin Releases](https://github.com/Fallstop/HapticWebPlugin/releases)
 2. Double-click the file — Logi Options+ will prompt you to install
 3. Click **Continue**
+
+> **Note:** Double-click install may not work on all systems. If it doesn't, use the marketplace method above.
 
 Verify it works:
 
