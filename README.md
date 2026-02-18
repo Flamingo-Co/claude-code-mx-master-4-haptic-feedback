@@ -54,7 +54,11 @@ git clone https://github.com/Flamingo-Co/claude-code-mx-master-4-haptic-feedback
 claude --plugin-dir ./claude-code-mx-master-4-haptic-feedback/plugins/haptic
 ```
 
-### 3. Done
+### 3. Restart Claude Code
+
+After installing, **restart Claude Code** for the hooks to take effect.
+
+### 4. Done
 
 Ask Claude anything. When it finishes responding, your mouse vibrates. ✅
 
