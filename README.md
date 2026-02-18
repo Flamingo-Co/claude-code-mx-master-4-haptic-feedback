@@ -40,13 +40,17 @@ curl -X POST -d '' https://local.jmw.nz:41443/haptic/completed
 ### 2. Install this Plugin
 
 ```bash
-# Inside Claude Code
-/plugin install Flamingo-Co/claude-code-mx-master-4-haptic-feedback
+# Step 1: Add the marketplace
+/plugin marketplace add Flamingo-Co/claude-code-mx-master-4-haptic-feedback
+
+# Step 2: Install the plugin
+/plugin install haptic@flamingo-haptic
 ```
 
 Or for local development:
 
 ```bash
+git clone https://github.com/Flamingo-Co/claude-code-mx-master-4-haptic-feedback.git
 claude --plugin-dir ./claude-code-mx-master-4-haptic-feedback
 ```
 
